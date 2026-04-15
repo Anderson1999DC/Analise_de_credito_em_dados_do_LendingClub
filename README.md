@@ -166,8 +166,8 @@ flowchart TD
 
 | Modelo | ROC-AUC | Recall Classe 1 (inadimplente) |
 |---|---|---|
-| Decision Tree | menor | ~22% |
-| **Random Forest (balanced)** | **maior** | **melhorado** |
+| Decision Tree | 0.524 | ~22% |
+| **Random Forest (balanced)** | 0.661 | **melhorado** |
 
 > Em problemas de crédito, **liberar crédito para inadimplentes gera prejuízo direto**. Por isso o Recall da classe 1 e o ROC-AUC são as métricas prioritárias não a acurácia geral.
 
@@ -185,12 +185,12 @@ flowchart TD
 
 | Aspecto | Decision Tree | Random Forest (balanced) |
 |---|---|---|
-| Acurácia geral | ~85% | ~85% |
-| Recall inadimplentes | ~22% | melhorado |
-| ROC-AUC | menor | **maior** |
-| Estabilidade | baixa | alta |
+| Acurácia geral | 74% | 84% |
+| Recall inadimplentes | 21% | 2% |
+| Precisão inadimplentes | 20% | 64% |
+| ROC-AUC | 0.524 | 0.661 |
 
-> O `class_weight='balanced'` penaliza mais os erros na classe minoritária (inadimplentes), forçando o modelo a identificá-los melhor comportamento essencial em problemas de crédito onde **liberar crédito para inadimplentes gera prejuízo direto**.
+O Random Forest obteve ROC-AUC superior (0.661 vs 0.524) e precisão muito maior na classe de inadimplentes (64% vs 20%), indicando que quando ele sinaliza risco, ele acerta mais. Porém, o Recall baixo (2%) revela que o threshold padrão de 0.5 não é adequado para esse problema. 
 
 ### Aplicações do Modelo
 
