@@ -192,6 +192,10 @@ flowchart TD
 
 O Random Forest obteve ROC-AUC superior (0.661 vs 0.524) e precisão muito maior na classe de inadimplentes (64% vs 20%), indicando que quando ele sinaliza risco, ele acerta mais. Porém, o Recall baixo (2%) revela que o threshold padrão de 0.5 não é adequado para esse problema. 
 
+## Deploy
+
+O modelo foi exportado como `modelo_credito_lendingclub.pkl` e as colunas esperadas como `colunas_credito.pkl`, permitindo integração via API. O deploy foi realizado para fins de aprendizado e conclusão do projeto de portfólio, demonstrando o fluxo completo de um projeto . Vale ressaltar que antes de qualquer uso em produção, o próximo passo essencial é o ajuste do threshold de decisão via curva ROC, substituindo o padrão de 0.5 por um ponto de corte calibrado conforme o apetite de risco do negócio, o que deve melhorar significativamente o Recall na classe de inadimplentes.
+
 ### Aplicações do Modelo
 
 - Apoio à decisão de concessão de crédito em fintechs e bancos
