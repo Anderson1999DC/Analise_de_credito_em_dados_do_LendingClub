@@ -17,12 +17,6 @@
 
 &nbsp;
 
-### Interface Interativa
-
-[![Interface do Modelo](assets/modelo_em_funcionamento.png)](https://api-credito-lendingclub.onrender.com/app)
-
-> Acesse a interface em: **[api-credito-lendingclub.onrender.com/app](https://api-credito-lendingclub.onrender.com/app)**
-
 ### Documentação Swagger
 
 [![Swagger UI](assets/Swagger_UI.png)](https://api-credito-lendingclub.onrender.com/docs)
@@ -38,7 +32,6 @@
 - [Tecnologias](#tecnologias-utilizadas)
 - [Dataset](#dataset)
 - [Análise Exploratória](#análise-exploratória)
-- [Modelos Avaliados](#modelos-avaliados)
 - [Principais Resultados](#principais-resultados)
 - [API em Produção](#api-em-produção)
 - [Estrutura do Repositório](#estrutura-do-repositório)
@@ -117,7 +110,7 @@ flowchart TD
 
 ## Dataset
 
-**Fonte:** [LendingClub](https://www.lendingclub.com) dados de empréstimos 2007–2010
+**Fonte:** [LendingClub](https://www.lendingclub.com) dados de empréstimos 2007-2010
 **Uso:** Exclusivamente educacional
 
 | Característica | Detalhe |
@@ -208,6 +201,7 @@ O modelo foi exportado como `modelo_credito_lendingclub.pkl` e as colunas espera
 ## API em Produção
 
 ### Interface Interativa
+[![Interface do Modelo](assets/modelo_em_funcionamento.png)](https://api-credito-lendingclub.onrender.com/app)
 
 > Acesse a interface em: **[api-credito-lendingclub.onrender.com/app](https://api-credito-lendingclub.onrender.com/app)**
 
